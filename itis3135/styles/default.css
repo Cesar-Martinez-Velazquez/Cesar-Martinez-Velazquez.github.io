@@ -1,0 +1,140 @@
+:root {
+    --blue: #087fc4;
+    --yellow: #f5ea5f;
+    --red: #f50127;
+}
+
+body {
+    background-color: var(--blue);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-header,
+.page-title {
+    font-family: 'Amatic SC', sans-serif;
+}
+
+header {
+   /* text-align: left; */
+}
+.main-header {
+    font-size: 2.9rem;
+    background-color: var(--red);
+    width: fit-content;
+    padding: 10px 25px;
+    border: 4px solid black;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    margin-left: 3%;
+}
+
+.main-header::after {
+    content: "";
+    position: absolute;
+    top: calc(0% - 30%);
+    height: 70%;
+    width: 70%;
+    background-image: url(/cmart220/itis3135/images/hello-kitty-adorable-bow-tie-red-ribbon-transparent-png-735811696682631nyx2mp4la1-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.page-title {
+    font-size: 7.3rem;
+    color: var(--yellow);
+    text-align: left;
+    margin-left: 3%;
+}
+nav {
+    margin: 0;
+    margin-left: 3%;
+}
+nav ul {
+    margin:0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 2% 0 0;
+}
+
+nav ul li a {
+    color: white;
+    transition: all linear .1s;
+}
+nav ul li a:active {
+    color: var(--red);
+}
+
+.page-intro {
+    width: 50%;
+    margin-left: 3%;
+    margin-bottom: 10%;
+}
+
+.page-intro a {
+    color: white;
+}
+
+main p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+figure {
+    margin-bottom: 10%;
+    text-align: center;
+}
+figure img {
+    width: 20%;
+}
+
+figcaption {
+    color: white;
+}
+
+.introduction-list {
+    line-height: 2rem;
+    color: white;
+}
+
+footer {
+    display: flex;
+    padding: 25px;
+    background-color: var(--yellow);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 25px 5%;
+    background-color: var(--yellow);
+    border: 4px solid black;
+}
+
+.copyright {
+    margin: 0; 
+}
+
+.footer-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+}
+
+.footer-nav a {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
