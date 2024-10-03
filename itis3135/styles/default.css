@@ -124,6 +124,10 @@ footer {
     margin: 0; 
 }
 
+.copy-container span {
+    font-size: .8rem;
+}
+
 .footer-nav {
     list-style-type: none;
     padding: 0;
