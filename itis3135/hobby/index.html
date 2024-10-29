@@ -32,34 +32,27 @@
             display: block;
         }
 
-        /* Basic reset for margins */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Header styling */
         .header {
             display: flex;
             align-items: center;
             padding: 50px;
         }
 
-        /* Style for the header title */
         .header-title {
             font-size: 50px;
             margin-right: 20px;
             font-family: 'Special Elite', sans-serif;
-            /* Space between title and the first link */
         }
 
-        /* Navbar styling */
         .navbar {
             display: flex;
             gap: 15px;
-            /* Space between links */
-            /* padding: 50px; */
         }
 
         .navbar a {
@@ -70,17 +63,14 @@
             color: white;
         }
 
-        /* Base styles for nav links */
         .nav-link {
             text-decoration: none;
             font-size: 16px;
             transition: background-color 0.3s;
         }
 
-        /* Active link styling */
         .nav-link.active {
             background-color: var(--highlight-color);
-            /* Replace with your highlight color variable or value */
         }
 
         .section-container {
@@ -101,24 +91,18 @@
             text-transform: uppercase;
         }
 
-        
+
 
         .section-container figure {
             display: block;
-            /* Make the figure a block element */
             margin: 0 auto;
-            /* Center the figure horizontally */
             padding: 50px;
-            /* Add padding around the figure */
             text-align: center;
-            /* Center the caption text */
         }
 
         .section-container figure img {
             max-width: 100%;
-            /* Ensure the image is responsive */
             height: auto;
-            /* Maintain aspect ratio */
         }
 
         .section-container figure figcaption {
@@ -137,14 +121,11 @@
 
         .section-form {
             display: flex;
-            /* Aligns children in a row */
             align-items: center;
-            /* Centers items vertically */
         }
 
         .section-form input {
             padding: 10px;
-            /* Adds some padding for better appearance */
             margin-right: 10px;
             margin-left: 10px;
             background-color: transparent;
@@ -154,10 +135,6 @@
             font-size: 25px;
             font-family: 'Special Elite', sans-serif;
             color: white;
-
-            /* Adds space between input and button */
-            /* flex: 1; */
-            /* Makes the input grow to fill available space */
         }
 
         .section-form input::placeholder {
@@ -176,19 +153,28 @@
             font-size: 25px;
             transition: all 0.3s;
             text-transform: uppercase;
-            /* Transition effect */
         }
 
         .section-form button:hover {
-            /* Corrected this line */
             color: #1f0204;
-            /* Changes text color on hover */
         }
 
         .section-form>label {
             text-transform: uppercase;
             font-size: 25px;
             font-family: 'Special Elite', sans-serif;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #fd6838;
+            padding: 25px;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .footer-text {
+            font-family: 'Arsenic', sans-serif;
         }
     </style>
 </head>
@@ -210,8 +196,10 @@
     <main>
         <section id="section-about" class="section-container active">
             <figure>
-                <img src="images/photo-batman-sitting-roof-looking-down-city-extremely-detailed-gotham_764382-29379.avif" 
-                     alt="photo of batman sitting on roof looking down at city">
+                <!-- <img src="/cmart220/itis3135/hobby/images/photo-batman-sitting-roof-looking-down-city-extremely-detailed-gotham_764382-29379.avif"" alt="
+                    photo of batman sitting on roof looking down at city"> -->
+                <img src="images/photo-batman-sitting-roof-looking-down-city-extremely-detailed-gotham_764382-29379.avif"" alt="
+                    photo of batman sitting on roof looking down at city">
                 <figcaption>sitting on a rooftop looking down at the city.</figcaption>
             </figure>
             <h2 class="section-name">who</h2>
@@ -229,6 +217,8 @@
         </section>
         <section id="section-what" class="section-container">
             <figure>
+                <!-- <img src="/cmart220/itis3135/hobby/images/justice.svg"
+                    alt="justice image of a woman holding the scales of justice"> -->
                 <img src="images/justice.svg" alt="justice image of a woman holding the scales of justice">
                 <figcaption>i am justice</figcaption>
             </figure>
@@ -254,6 +244,7 @@
         </section>
         <section id="section-where" class="section-container">
             <figure>
+                <!-- <img src="/cmart220/itis3135/hobby/images/the-city.svg" alt="the city batman fights in"> -->
                 <img src="images/the-city.svg" alt="the city batman fights in">
                 <figcaption>i fight in the shadows of the city, in the shadows of shadows</figcaption>
             </figure>
@@ -277,10 +268,11 @@
         </section>
         <section id="section-when" class="section-container">
             <figure>
+                <!-- <img src="/cmart220/itis3135/hobby/images/batsignal-custom.svg" alt="bat signal lighting the sky"> -->
                 <img src="images/batsignal-custom.svg" alt="bat signal lighting the sky">
                 <figcaption>i have a signal that calls me, a call that i never fail to answer</figcaption>
             </figure>
-            
+
             <h2 class="section-name">when</h2>
             <p class="section-body-text">I emerge when the sun sinks below the horizon, shrouded in darkness and
                 secrecy. The night is my ally, providing cover as I take action against the wicked. As shadows lengthen,
@@ -300,10 +292,12 @@
         </section>
         <section id="section-why" class="section-container">
             <figure>
+                <!-- <img src="/cmart220/itis3135/hobby/images/why-i-fight.svg" alt="sad innocent woman crying"> -->
                 <img src="images/why-i-fight.svg" alt="sad innocent woman crying">
-                <figcaption>why must the innocent suffer? i fight so the question never has to be asked again</figcaption>
+                <figcaption>why must the innocent suffer? i fight so the question never has to be asked again
+                </figcaption>
             </figure>
-            
+
             <h2 class="section-name">why</h2>
 
             <p class="section-body-text">I fight because the world is a breeding ground for darkness, where the innocent
@@ -325,10 +319,13 @@
         </section>
         <section id="section-how" class="section-container">
             <figure>
+                <!-- <img src="/cmart220/itis3135/hobby/images/how-i-fight.svg"
+                    alt="batman raising his fist with bats surrounding in the background"> -->
                 <img src="images/how-i-fight.svg" alt="batman raising his fist with bats surrounding in the background">
-                <figcaption>my fist is the last thing the scum of the city see; my favorite tool of fear and hope</figcaption>
+                <figcaption>my fist is the last thing the scum of the city see; my favorite tool of fear and hope
+                </figcaption>
             </figure>
-            
+
             <h2 class="section-name">how</h2>
 
             <p class="section-body-text">In this relentless pursuit of justice, I embrace the darkness and become a
@@ -347,25 +344,31 @@
         </section>
         <section id="section-ai" class="section-container">
             <figure>
+                <!-- <img src="/cmart220/itis3135/hobby/images/ai-computer.svg" alt="computer used for ai"> -->
                 <img src="images/ai-computer.svg" alt="computer used for ai">
                 <figcaption>ai is my second favorite tool</figcaption>
             </figure>
             <h2 class="section-name">AI prompts used for code:</h2>
-            <p class="section-body-text">p: in my navbar i have links to different sections (each with their own ids) on my page, how can i hide each section save for the one i clicked on</p>
+            <p class="section-body-text">p: in my navbar i have links to different sections (each with their own ids) on
+                my page, how can i hide each section save for the one i clicked on</p>
             <p class="section-body-text">p: how can i set one section to be the one visible on page load?
             </p>
-            <p class="section-body-text">p: ive set a nav-link class for the a tags, and i already have a highlight color, can you make an active class where each active section gets highlighted?
+            <p class="section-body-text">p: ive set a nav-link class for the a tags, and i already have a highlight
+                color, can you make an active class where each active section gets highlighted?
 
             </p>
             <p class="section-body-text">p: how to style placeholder text?
 
             </p>
             <h2 class="section-name" style="margin-top: 25px;">ai prompts used for text:</h2>
-            <p class="section-body-text">p: pretend my hobby is being a vigilante (batman), and im writing a "who" section on a website about my hobby, what text should i put for this section?</p>
+            <p class="section-body-text">p: pretend my hobby is being a vigilante (batman), and im writing a "who"
+                section on a website about my hobby, what text should i put for this section?</p>
             <p class="section-body-text">p: and for the "what", "where", "when", "why", and "how" sections?</p>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p class="footer-text">Designed by Vela Studio &copy; 2024</p>
+    </footer>
     <script>
         function showSection(sectionId, clickedLink) {
             // Hide all sections
