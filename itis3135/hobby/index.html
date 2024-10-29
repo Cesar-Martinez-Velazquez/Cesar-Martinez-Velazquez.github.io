@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            background-color: #1f0204;
+            color: white;
+            --highlight-color: #fd6838;
+        }
+
+        .section-container {
+            display: none;
+        }
+
+        .section-container.active {
+            display: block;
+        }
+
+        /* Basic reset for margins */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header styling */
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 50px;
+        }
+
+        /* Style for the header title */
+        .header-title {
+            font-size: 50px;
+            margin-right: 20px;
+            font-family: 'Special Elite', sans-serif;
+            /* Space between title and the first link */
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            gap: 15px;
+            /* Space between links */
+            /* padding: 50px; */
+        }
+
+        .navbar a {
+            text-decoration: none;
+            font-size: 16px;
+            padding: 3px;
+            transition: background-color 0.3s;
+            color: white;
+        }
+
+        /* Base styles for nav links */
+        .nav-link {
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        /* Active link styling */
+        .nav-link.active {
+            background-color: var(--highlight-color);
+            /* Replace with your highlight color variable or value */
+        }
+
+        .section-container {
+            padding: 25px;
+        }
+
+        .section-name {
+            font-family: 'Arsenic', sans-serif;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+
+        .section-body-text {
+            font-family: 'Special Elite', sans-serif;
+            font-size: 25px;
+            margin-top: 25px;
+            text-transform: uppercase;
+        }
+
+        
+
+        .section-container figure {
+            display: block;
+            /* Make the figure a block element */
+            margin: 0 auto;
+            /* Center the figure horizontally */
+            padding: 50px;
+            /* Add padding around the figure */
+            text-align: center;
+            /* Center the caption text */
+        }
+
+        .section-container figure img {
+            max-width: 100%;
+            /* Ensure the image is responsive */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+
+        .section-container figure figcaption {
+            font-family: 'Arsenic', sans-serif;
+            text-transform: capitalize;
+        }
+
+
+        .section-container>ul {
+            list-style-type: square;
+            font-family: 'Special Elite', sans-serif;
+            padding: 25px;
+            margin-top: 25px;
+            font-size: 25px;
+        }
+
+        .section-form {
+            display: flex;
+            /* Aligns children in a row */
+            align-items: center;
+            /* Centers items vertically */
+        }
+
+        .section-form input {
+            padding: 10px;
+            /* Adds some padding for better appearance */
+            margin-right: 10px;
+            margin-left: 10px;
+            background-color: transparent;
+            outline: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            font-size: 25px;
+            font-family: 'Special Elite', sans-serif;
+            color: white;
+
+            /* Adds space between input and button */
+            /* flex: 1; */
+            /* Makes the input grow to fill available space */
+        }
+
+        .section-form input::placeholder {
+            font-size: 25px;
+            font-family: 'Special Elite', sans-serif;
+            color: white;
+        }
+
+        .section-form button {
+            padding: 10px 15px;
+            cursor: pointer;
+            background-color: var(--highlight-color);
+            border: none;
+            color: white;
+            font-family: 'Special Elite', sans-serif;
+            font-size: 25px;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            /* Transition effect */
+        }
+
+        .section-form button:hover {
+            /* Corrected this line */
+            color: #1f0204;
+            /* Changes text color on hover */
+        }
+
+        .section-form>label {
+            text-transform: uppercase;
+            font-size: 25px;
+            font-family: 'Special Elite', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-title">VIGILANTE</h1>
+        <nav class="navbar">
+            <a href="#section-about" class="nav-link active" onclick="showSection('section-about', this)">WHO</a>
+            <a href="#section-what" class="nav-link" onclick="showSection('section-what', this)">WHAT</a>
+            <a href="#section-where" class="nav-link" onclick="showSection('section-where', this)">WHERE</a>
+            <a href="#section-when" class="nav-link" onclick="showSection('section-when', this)">WHEN</a>
+            <a href="#section-why" class="nav-link" onclick="showSection('section-why', this)">WHY</a>
+            <a href="#section-how" class="nav-link" onclick="showSection('section-how', this)">HOW</a>
+            <a href="#section-ai" class="nav-link" onclick="showSection('section-ai', this)">AI</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="section-about" class="section-container active">
+            <figure>
+                <img src="images/photo-batman-sitting-roof-looking-down-city-extremely-detailed-gotham_764382-29379.avif" 
+                     alt="photo of batman sitting on roof looking down at city">
+                <figcaption>sitting on a rooftop looking down at the city.</figcaption>
+            </figure>
+            <h2 class="section-name">who</h2>
+            <p class="section-body-text">I am a shadow in the night, a vigilante driven by a relentless pursuit of
+                justice. Cloaked in darkness, I confront the evils that plague our streets, striking fear into the
+                hearts of those who prey on the innocent.
+
+            <p class="section-body-text">
+                Fueled by a personal code, I operate outside the law, willing to take risks that others fear. My mission
+                is clear: to restore order in a world tainted by chaos and corruption. In this relentless battle, I
+                embody the darkness that lies within us all, reminding the wicked that their actions have consequences.
+            </p>
+
+            </p>
+        </section>
+        <section id="section-what" class="section-container">
+            <figure>
+                <img src="images/justice.svg" alt="justice image of a woman holding the scales of justice">
+                <figcaption>i am justice</figcaption>
+            </figure>
+            <h2 class="section-name">what</h2>
+            <p class="section-body-text">
+                As a vigilante, I take justice into my own hands, navigating the fine line between right and wrong. My
+                mission encompasses various forms of action, including:
+            </p>
+            <ul>
+                <li>Patrols: I roam the streets under the cover of night, observing and intervening where danger lurks.
+                </li>
+                <li>Investigation: Uncovering the hidden truths behind crime and corruption, I gather intel to expose
+                    those who believe they are untouchable.</li>
+                <li>Confrontation: When the law fails to protect the innocent, I confront wrongdoers directly, using
+                    intimidation and strategy to reclaim our streets.</li>
+            </ul>
+            <form action="#" method="post" class="section-form">
+                <label for="tip-form">i don't do this for the money but i do accept tips:</label>
+                <input type="text" id="tip-amount" name="tip-amount" placeholder="$50" required>
+
+                <button type="submit">tip</button>
+            </form>
+        </section>
+        <section id="section-where" class="section-container">
+            <figure>
+                <img src="images/the-city.svg" alt="the city batman fights in">
+                <figcaption>i fight in the shadows of the city, in the shadows of shadows</figcaption>
+            </figure>
+            <h2 class="section-name">where</h2>
+            <p class="section-body-text">I haunt the shadows of the city, where darkness cloaks despair and danger lurks
+                in every corner. My territory spans the desolate alleys, crumbling buildings, and forgotten districts
+                where evil festers. These are the places where the weak are preyed upon, and I stand as their silent
+                protector.
+
+            </p>
+            <p class="section-body-text">In the depths of night, I navigate the urban labyrinth—an unforgiving landscape
+                where morality fades and fear reigns. I blend into the darkness, stalking those who believe they can act
+                without consequence, lurking in the shadows to strike when they least expect it.
+
+            </p>
+            <p class="section-body-text">Here, in the underbelly of society, I confront the wicked and remind them that
+                justice can emerge from the darkness. This is my domain, a battleground where I wage war against the
+                forces that threaten to engulf the innocent.
+
+            </p>
+        </section>
+        <section id="section-when" class="section-container">
+            <figure>
+                <img src="images/batsignal-custom.svg" alt="bat signal lighting the sky">
+                <figcaption>i have a signal that calls me, a call that i never fail to answer</figcaption>
+            </figure>
+            
+            <h2 class="section-name">when</h2>
+            <p class="section-body-text">I emerge when the sun sinks below the horizon, shrouded in darkness and
+                secrecy. The night is my ally, providing cover as I take action against the wicked. As shadows lengthen,
+                I become a silent sentinel, stalking the streets when others retreat to safety.
+
+            </p>
+            <p class="section-body-text">My work is not bound by time; it begins as the world sleeps and intensifies in
+                the dead of night. During moments of chaos, when fear grips the city and the cries for help are drowned
+                out, I spring into action.
+
+            </p>
+            <p class="section-body-text">In those hours when morality blurs and the line between right and wrong fades,
+                I embrace my role as a harbinger of justice. I strike when the moment is right, using the cover of
+                darkness to deliver consequences to those who prey upon the weak.
+
+            </p>
+        </section>
+        <section id="section-why" class="section-container">
+            <figure>
+                <img src="images/why-i-fight.svg" alt="sad innocent woman crying">
+                <figcaption>why must the innocent suffer? i fight so the question never has to be asked again</figcaption>
+            </figure>
+            
+            <h2 class="section-name">why</h2>
+
+            <p class="section-body-text">I fight because the world is a breeding ground for darkness, where the innocent
+                are preyed upon and justice is a distant dream. I refuse to be a mere spectator while the wicked revel
+                in their power, knowing that silence only serves to amplify their cruelty.
+
+            </p>
+            <p class="section-body-text">Haunted by my own demons and driven by a thirst for retribution, I seek to
+                unleash a reckoning on those who think they can escape the consequences of their actions. Each act of
+                violence, each cry for help, fuels my resolve to confront the evil that festers in the shadows.
+
+            </p>
+            <p class="section-body-text">In a society that often turns a blind eye, I embrace the darkness as my ally. I
+                fight not just for myself but for every soul trapped in despair, for every victim left voiceless. I will
+                be the force that disrupts their malevolence, reminding them that their actions will never go
+                unpunished.
+
+            </p>
+        </section>
+        <section id="section-how" class="section-container">
+            <figure>
+                <img src="images/how-i-fight.svg" alt="batman raising his fist with bats surrounding in the background">
+                <figcaption>my fist is the last thing the scum of the city see; my favorite tool of fear and hope</figcaption>
+            </figure>
+            
+            <h2 class="section-name">how</h2>
+
+            <p class="section-body-text">In this relentless pursuit of justice, I embrace the darkness and become a
+                force that the wicked cannot ignore. My methods may be unconventional, but my resolve is unwavering,
+                fueled by the desire to reclaim hope from despair.
+
+            </p>
+
+            <ul>
+                <li>Surveillance</li>
+                <li>Pyschological Warfare</li>
+                <li>Violence</li>
+            </ul>
+
+
+        </section>
+        <section id="section-ai" class="section-container">
+            <figure>
+                <img src="images/ai-computer.svg" alt="computer used for ai">
+                <figcaption>ai is my second favorite tool</figcaption>
+            </figure>
+            <h2 class="section-name">AI prompts used for code:</h2>
+            <p class="section-body-text">p: in my navbar i have links to different sections (each with their own ids) on my page, how can i hide each section save for the one i clicked on</p>
+            <p class="section-body-text">p: how can i set one section to be the one visible on page load?
+            </p>
+            <p class="section-body-text">p: ive set a nav-link class for the a tags, and i already have a highlight color, can you make an active class where each active section gets highlighted?
+
+            </p>
+            <p class="section-body-text">p: how to style placeholder text?
+
+            </p>
+            <h2 class="section-name" style="margin-top: 25px;">ai prompts used for text:</h2>
+            <p class="section-body-text">p: pretend my hobby is being a vigilante (batman), and im writing a "who" section on a website about my hobby, what text should i put for this section?</p>
+            <p class="section-body-text">p: and for the "what", "where", "when", "why", and "how" sections?</p>
+        </section>
+    </main>
+    <footer></footer>
+    <script>
+        function showSection(sectionId, clickedLink) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section-container');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Show the selected section
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.classList.add('active');
+            }
+
+            // Remove active class from all nav links
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach(link => link.classList.remove('active'));
+
+            // Add active class to the clicked link
+            clickedLink.classList.add('active');
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -19,8 +19,9 @@ body {
 }
 
 header {
-   /* text-align: left; */
+    /* text-align: left; */
 }
+
 .main-header {
     font-size: 2.9rem;
     background-color: var(--red);
@@ -39,7 +40,9 @@ header {
     top: calc(0% - 30%);
     height: 70%;
     width: 70%;
-    background-image: url(/itis3135/images/hello-kitty-adorable-bow-tie-red-ribbon-transparent-png-735811696682631nyx2mp4la1-removebg-preview.png);
+    /*background-image: url(/itis3135/images/hello-kitty-adorable-bow-tie-red-ribbon-transparent-png-735811696682631nyx2mp4la1-removebg-preview.png);*/
+    background-image: url(/cmart220/itis3135/images/hello-kitty-adorable-bow-tie-red-ribbon-transparent-png-735811696682631nyx2mp4la1-removebg-preview.png);
+
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -50,12 +53,14 @@ header {
     text-align: left;
     margin-left: 3%;
 }
+
 nav {
     margin: 0;
     margin-left: 3%;
 }
+
 nav ul {
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
@@ -69,6 +74,7 @@ nav ul li a {
     color: white;
     transition: all linear .1s;
 }
+
 nav ul li a:active {
     color: var(--red);
 }
@@ -92,6 +98,7 @@ figure {
     margin-bottom: 10%;
     text-align: center;
 }
+
 figure img {
     width: 20%;
 }
@@ -113,7 +120,7 @@ footer {
 
 footer {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     padding: 25px 5%;
     background-color: var(--yellow);
@@ -121,7 +128,7 @@ footer {
 }
 
 .copyright {
-    margin: 0; 
+    margin: 0;
 }
 
 .copy-container span {

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vela Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            background-color: #fffaf7;
+        }
+
+        nav {
+            text-align: initial;
+        }
+
+        nav, footer {
+            width: 100%;
+            padding: 25px;
+        }
+
+        nav .text-logo, .footer .text-logo {
+            font-family: 'Amatic SC', sans-serif;
+            font-size: 50px;
+            line-height: 45px;
+        }
+
+        nav .text-logo>span, .footer .text-logo>span {
+            margin-left: 10%;
+        }
+
+        .navbar, .footer {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+
+
+        header {
+            text-align: center;
+        }
+
+        @keyframes hover {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(5px, -5px);
+                /* Move slightly up and to the right */
+            }
+
+            50% {
+                transform: translate(-5px, -5px);
+                /* Move slightly up and to the left */
+            }
+
+            75% {
+                transform: translate(5px, 0);
+                /* Move back to the right */
+            }
+
+            100% {
+                transform: translate(0, 0);
+                /* Return to the original position */
+            }
+        }
+
+        .brand-image-main {
+            animation: hover 1s ease-in-out infinite;
+        }
+
+        main h2.section-title {
+            font-family: 'Urbanist', sans-serif;
+            text-indent: 2%;
+        }
+
+        section.about {
+            padding: 25px;
+        }
+
+        section.about>p {
+            font-size: 25px;
+            padding: 5px;
+        }
+
+        section.about>h2 {
+            font-size: 50px;
+            font-weight: lighter;
+        }
+
+        section.about>ul {
+            list-style-type: decimal-leading-zero;
+            padding: 50px;
+            font-size: 25px;
+        }
+
+        .contact-info {
+            line-height: 20px;
+            font-size: 20px;
+        }
+
+        .footer {
+            margin-top: -1.5%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="images/vela-studio-logo-corp.svg" alt="logo" id="image-logo" width="75px">
+            <h1 class="text-logo">vela<br><span>studio</span></h1>
+        </nav>
+        <img src="/itis3135/vela-studio.com/images/vela-studio-logo-ani.svg" alt="insect logo" class="brand-image-main"
+            width="45%">
+    </header>
+    <main>
+        <section class="about">
+            <h2 class="section-title">about us</h2>
+            <p>Vela Studio is a design studio that specializes in crafting engaging digital experiences that resonate
+                with
+                users on a personal level. We focus on blending creativity and functionality, ensuring that each project
+                reflects the unique essence of our clients.</p><br>
+            <hr>
+            <ul>
+                <li>Personalized Approach</li>
+                <li>User-Centric Design</li>
+                <li>Innovative Creativity</li>
+                <li>Collaborative Process</li>
+                <li>Commitment to Quality</li>
+            </ul><br>
+            <hr><br>
+            <p>At Vela Studio, we’re eager to bring your digital vision to life. Whether you're looking for a complete
+                website redesign or a fresh online presence, our dedicated team is here to collaborate with you every
+                step of the way. We aim to create a website that not only reflects your brand’s identity but also
+                engages and captivates your audience. Let's work together to craft a unique online experience that
+                stands out in today’s competitive landscape. Reach out to us, and let's discuss how we can help elevate
+                your brand!</p>
+            <br>
+            <div class="contact-info">
+                <p>Email: contact@velastudio.com </p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Address: 123 Creative Lane, Suite 456, Design City, ST 78901</p>
+            </div>
+            <br>
+            <hr>
+        </section>
+    </main>
+    <footer class="footer">
+        <img src="images/vela-studio-logo-corp.svg" alt="logo" id="image-logo" width="75px">
+        <p class="copy">Vela Studio &copy; 2024</p>
+    </footer>
+</body>
+
+</html>
