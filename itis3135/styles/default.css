@@ -131,6 +131,10 @@ footer {
     margin: 0;
 }
 
+.copyright > a {
+    color: initial;
+}
+
 .copy-container span {
     font-size: .8rem;
 }
